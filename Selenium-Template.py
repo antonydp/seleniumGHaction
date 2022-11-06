@@ -35,7 +35,6 @@ driver = webdriver.Chrome(options = chrome_options)
 
 driver.get('https://www.tantifilm.rodeo')
 print(driver.title)
-print(driver.url)
 with open('./GitHub_Action_Results.txt', 'w') as f:
     f.write(f"This was written with a GitHub action {driver.title}")
 
